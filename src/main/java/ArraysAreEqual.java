@@ -14,7 +14,27 @@ public class ArraysAreEqual {
      * @param b the second array.
      * @return true if the values of a are equal to the values of b.
      */
-    public boolean equal(int[] a, int[] b){
-        return false;
+    public boolean equal(int[] a, int[] b)
+    {
+        int count = 0;
+        for (int i = 0; i < a.length; i++)
+        {
+            System.out.println("LOOP count " + i);
+               
+            if (a[i] == b[i])
+            {
+               System.out.println("array a " + a[i]);
+               System.out.println("array b " + b[i]);
+                count++;
+            }
+            
+        }
+        if (count == a.length)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }       
     }
 }
